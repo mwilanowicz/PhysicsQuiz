@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QuizActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="56dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="312dp"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="5"
+        android:progress="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_view_progress"
+        android:layout_width="61dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="136dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/_0_10"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/True"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="True"
+        android:text="True"
+        app:layout_constraintEnd_toEndOf="@+id/Cheat"
+        app:layout_constraintTop_toBottomOf="@+id/Question"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/False"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="180dp"
+        android:onClick="False"
+        android:text="False"
+        app:layout_constraintStart_toStartOf="@+id/Cheat"
+        app:layout_constraintTop_toBottomOf="@+id/Question" />
+
+    <Button
+        android:id="@+id/Cheat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="Cheat"
+        android:text="Cheat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/True"/>
+
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="166dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="200dp"
+        android:onClick="Search"
+        android:text="Search Answer Online"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/True" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
